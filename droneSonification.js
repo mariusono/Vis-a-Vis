@@ -4,7 +4,7 @@ class droneSonification {
         this.baseFreq = baseFreq;
         this.type = type;
 
-        this.volumesArray = [...Array(this.numOscillators).keys()].map(i => 1 / (i + 1));
+        this.volumesArray = [...Array(this.numOscillators).keys()].map(i => 0.8 * (1 / (i + 1)));
         this.volumesArray = this.volumesArray.map(n => mag2db(n)); // db values to mag
 
         this.baseFreqFact = baseFreqFact;

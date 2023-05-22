@@ -241,7 +241,7 @@ for (var i = 0; i<pathJsons.length; i++){
             // console.log(JsonString_read[i]);
         }
     }
-    txtFile.open("GET", pathJsons[i], false); // FALSE HERE IS RLY IMPORTANT ! 
+    txtFile.open("GET", pathJsons[i], false); // FALSE HERE IS RLY IMPORTANT ! WAITS FOR EACH XMLHTTPREQUEST TO FINISH BEFORE MOVING ON TO THE NEXT
     txtFile.send(null);
 }
 
